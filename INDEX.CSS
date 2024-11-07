@@ -1,0 +1,360 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    color: #333;
+    background-color: #f4f4f9;
+  }
+  
+  /* Amazon-inspired Colors */
+  :root {
+    --primary-color: #232f3e; /* Dark Blue */
+    --accent-color: #ff9900; /* Amazon Orange */
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .nav-box {
+    background-color: var(--accent-color);
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 60px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Main Section */
+  .admission-banner {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    position: relative;
+    text-align: center;
+  }
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 10px;
+  }
+  /* Tagline Text Overlay on Carousel */
+  .carousel-tagline {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    font-weight: bold;
+    pointer-events: none; /* Ensures buttons are clickable without interference */
+  }
+  
+  /* Mission, Vision, Focus Section */
+  .info-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #9b9b9b;
+  }
+  
+  .info-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+  }
+  
+  .info-section:hover {
+    background-color: white;
+  }
+  
+  .topic_card {
+    height: 30px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  /* Image Cards Section */
+  .image-cards {
+    padding: 20px;
+    background-color: #e0e0e0; /* Optional background color for the image cards section */
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap to the next line */
+    gap: 20px; /* Space between the cards */
+    justify-content: center; /* Center the cards */
+  }
+  
+  .card {
+    width: 300px; /* Adjust width for two cards in a row */
+    height: 300px; /* Adjust height for consistent square aspect */
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-bottom: 10px; /* Space below the image for caption */
+    transition: transform 0.2s; /* Smooth transition for hover effect */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .card img {
+    width: 100%; /* Make image responsive */
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-top-left-radius: 5px; /* Round top corners */
+    border-top-right-radius: 5px; /* Round top corners */
+  }
+  
+  .card p {
+    margin-top: 10px; /* Space between image and caption */
+    color: #333; /* Caption text color */
+  }
+  
+  /* Achievements Section */
+  .achievements {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .achievement-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+  }
+  
+  /* About Section */
+  .about-section {
+    padding: 20px;
+    background-color: #e0e0e0;
+    text-align: center;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 40px; /* Increased padding for a larger footer */
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+  .social-media {
+    text-align: left;
+  }
+  
+  .social-media img {
+    width: 30px; /* Adjust size of social media icons */
+    margin-right: 10px;
+  }
+  
+  .recommendation-form {
+    text-align: left;
+  }
+  
+  .recommendation-form textarea {
+    width: 300px; /* Adjust width of textarea */
+    margin-bottom: 10px;
+  }
+  
+  .recommendation-form button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .recommendation-form button:hover {
+    background-color: var(--primary-color);
+  }
+  
+  .contact-info h5 {
+    margin-bottom: 5px;
+  }
+  /* Link styling for 'Read More' links in Achievements section */
+  .achievement-card a {
+    text-decoration: none;
+    color: #0066cc; /* A distinct color for links */
+    font-weight: bold;
+  }
+  
+  .achievement-card a:hover {
+    text-decoration: underline;
+    color: #004999;
+  }
+  
+  /* New event detail page layout */
+  .event-detail {
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-detail h2 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .event-detail p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .event-detail img {
+    width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Back link on event pages */
+  .back-link {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+    color: #004999;
+  }
+  /* Full-Width Carousel Styling */
+  .hero-section {
+    position: relative;
+    overflow: hidden; /* Hides any overflow to ensure a clean edge */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .carousel-container {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+  }
+  
+  .carousel-slide {
+    min-width: 100%; /* Ensures each image takes up the full viewport width */
+    height: 100%; /* Ensures each image takes up the full viewport height */
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 100%; /* Ensure each image fills the height of the carousel */
+    object-fit: cover; /* Covers the container without stretching */
+  }
+  
+  .carousel-tagline {
+    position: absolute;
+    top: 20%; /* Adjust as needed for visibility */
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: bold;
+    pointer-events: none; /* Ensures buttons are clickable without interference */
+  }
+  
+  .carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-buttons button {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent for visibility */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+  }
+  
+  .carousel-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+  }
